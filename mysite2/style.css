@@ -107,14 +107,62 @@ h2 {
   padding: 20px 60px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 120px 200px 200px;
+  grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+  grid-template-columns: 120px 50px 150px 50px 150px;
+  row-gap: 10px;
 }
-.name {
+#name {
   grid-row: 1/2;
-  grid-column: 2/4;
+  grid-column: 2/6;
 }
-.sex {
+
+#gender-t {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+#gender-m {
+  grid-row: 2/3;
+  grid-column: 3/4;
   line-height: 30px;
+}
+#gender-f {
+  grid-row: 2/3;
+  grid-column: 5/6;
+  line-height: 30px;
+}
+#gender0 {
+  margin: auto auto;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+#gender1 {
+  margin: auto auto;
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+#form-title {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+#form-box {
+  grid-row: 3/7;
+  grid-column: 2/6;
+}
+#file-title {
+  grid-row: 7/8;
+  grid-column: 1/2;
+}
+#form-file {
+  grid-row: 7/8;
+  grid-column: 2/6;
+}
+#submit-btn {
+  grid-row: 8/9;
+  grid-column: 2/6;
+  width: 150px;
+  margin: 0 auto;
+  background-color: rgba(59, 95, 214, 0.658);
+  color: white;
 }
 
 footer {

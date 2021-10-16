@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="check.js"></script>
     <title>MySite</title>
   </head>
 
   <body>
     <header>
-        <p class="title">自己紹介
+        <p class="title"> お問い合わせ
         </p>
       <nav>
         <ul class="nav-list">
@@ -25,15 +26,16 @@
       </nav>
     </header>
 
-    <form action="#" method="post" class="form-contents">
-      <h3>名前</h3><input type="text" name="name" class="name">
-      <h3>性別</h3><input type="checkbox" name="sex" class="sex">
+    <form action="style.css" method="post" class="form-contents" name="contact">
+      <h3>名前</h3><input type="text" name="user_name" id="name">
+      <h3 id="gender-t">性別</h3><input type="radio" name="gender"  id="gender0" value ="0">
+      <p id="gender-m">男性</p><input type="radio" name="gender"  id="gender1" value ="1">
+      <p id="gender-f">女性</p>
+      <h3 id="form-title">問合内容</h3><textarea name="form_box" id="form-box">ここに記入してください</textarea>
+      <h3 id="file-title">添付ファイル</h3><input type="file" name="file" id="form-file">
+      <input name="btn_submit" value="送信" type="submit" id ="submit-btn" onclick="return check();">
     </form>
 
-    <div class="self-introduction">
-      <h3>自己紹介</h3>
-      <p>文章<br>文章<br>文章<br>文章</p>
-    </div>
     <footer>
       <p>2021 All Rights Reserved</p>
     </footer>
@@ -41,3 +43,4 @@
 
   </body>
 </html>
+
